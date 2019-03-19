@@ -1,0 +1,8 @@
+com/seema/cookbook/domain/RecipeMapper.class
+com/seema/cookbook/domain/Recipe.class
+com/seema/cookbook/service/RecipeService.class
+com/seema/cookbook/repository/DatabaseRecipeRepository.class
+com/seema/cookbook/config/MvcConfiguration.class
+com/seema/cookbook/controller/RecipeController.class
+com/seema/cookbook/repository/MockRecipeRepository.class
+com/seema/cookbook/repository/RecipeRepository.class

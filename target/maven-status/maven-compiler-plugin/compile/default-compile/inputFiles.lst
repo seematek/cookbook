@@ -1,0 +1,8 @@
+/Users/seemavibbert/myproject/cookbook/src/main/java/com/seema/cookbook/repository/MockRecipeRepository.java
+/Users/seemavibbert/myproject/cookbook/src/main/java/com/seema/cookbook/domain/Recipe.java
+/Users/seemavibbert/myproject/cookbook/src/main/java/com/seema/cookbook/controller/RecipeController.java
+/Users/seemavibbert/myproject/cookbook/src/main/java/com/seema/cookbook/repository/RecipeRepository.java
+/Users/seemavibbert/myproject/cookbook/src/main/java/com/seema/cookbook/config/MvcConfiguration.java
+/Users/seemavibbert/myproject/cookbook/src/main/java/com/seema/cookbook/repository/DatabaseRecipeRepository.java
+/Users/seemavibbert/myproject/cookbook/src/main/java/com/seema/cookbook/service/RecipeService.java
+/Users/seemavibbert/myproject/cookbook/src/main/java/com/seema/cookbook/domain/RecipeMapper.java
