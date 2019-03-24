@@ -18,7 +18,7 @@ import com.seema.cookbook.service.RecipeService;
 @RestController
 @RequestMapping("/recipes")
 public class RecipeController {
-// Saturday try
+// Saturday try test two
 	RecipeService recipeService;
 	
 	@Autowired
