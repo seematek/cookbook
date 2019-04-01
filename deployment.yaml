@@ -19,13 +19,11 @@ spec:
         imagePullPolicy: Always
         ports:
            - containerPort: 8080
-#      imagePullSecrets:
-#           - name: regcred
+      imagePullSecrets:
+           - name: $KUBERNETES_SECRET_NAME
+           - name: regcred
 
-
-
-
-        
+   
 ---
 
 kind: Service
