@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: cookbook
-        image: seematech/cookbook:latest
+        image: seematech/cookbook:$BUILD_NUMBER
         imagePullPolicy: Always
         ports:
            - containerPort: 8080
