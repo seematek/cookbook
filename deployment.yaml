@@ -16,6 +16,7 @@ spec:
       containers:
       - name: cookbook
         image: seematech/cookbook:latest
+        imagePullPolicy: Always
         ports:
            - containerPort: 8080
       imagePullSecrets:
