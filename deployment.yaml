@@ -1,4 +1,4 @@
-apiVersion: apps/v1 
+apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
   name: cookbook-deployment
@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: cookbook
-        image: seematech/cookbook:$BUILD_NUMBER
+        image: seematech/cookbook:25
         imagePullPolicy: Always
         ports:
            - containerPort: 8080
@@ -27,7 +27,7 @@ spec:
 ---
 
 kind: Service
-apiVersion: v1
+apiVersion: v1beta1
 metadata:
   name: cookbook-service
   namespace: jenkinsworld
