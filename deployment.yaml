@@ -1,0 +1,44 @@
+apiVersion: apps/v1 
+kind: Deployment
+metadata:
+  name: cookbook-deployment
+  namespace: jenkinsworld
+spec:
+  selector:
+    matchLabels:
+      app: cookbook
+  replicas: 2 
+  template:
+    metadata:
+      labels:
+        app: cookbook
+    spec:
+      containers:
+      - name: cookbook
+        image: seematech/cookbook:latest
+        ports:
+           - containerPort: 8080
+      imagePullSecrets:
+           - name: regcred
+
+
+
+
+        
+---
+
+kind: Service
+apiVersion: v1
+metadata:
+  name: cookbook-service
+  namespace: jenkinsworld
+spec:
+  selector:
+    app: cookbook
+  ports:
+  - protocol: TCP
+    port: 8080
+    targetPort: 8080
+    nodePort: 31000
+  type: NodePort        
+        
