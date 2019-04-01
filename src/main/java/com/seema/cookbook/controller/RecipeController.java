@@ -18,7 +18,7 @@ import com.seema.cookbook.service.RecipeService;
 @RestController
 @RequestMapping("/recipes")
 public class RecipeController {
-// Saturday try test two
+// Saturday try test two - our new test!!!
 	RecipeService recipeService;
 	
 	@Autowired
@@ -33,6 +33,7 @@ public class RecipeController {
 	
 	@GetMapping("/")
 	public Collection<Recipe> getRecipes() {
+		System.out.println("In getRecipes !!!!");
 		return recipeService.getRecipes();	
 	}
 	
