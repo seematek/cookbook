@@ -33,7 +33,7 @@ public class RecipeController {
 	
 	@GetMapping("/")
 	public Collection<Recipe> getRecipes() {
-		System.out.println("In getRecipes !!!!");
+		System.out.println("In getRecipes PLEASEEEE!!!!");
 		return recipeService.getRecipes();	
 	}
 	
