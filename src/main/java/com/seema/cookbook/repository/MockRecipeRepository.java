@@ -29,6 +29,11 @@ public class MockRecipeRepository implements RecipeRepository {
 	}
 	
 	@Override
+	public boolean updateRecipe(Recipe recipe) {
+		return true;
+	}
+	
+	@Override
 	public boolean deleteRecipe(int id) {
 		return true;	
 	}

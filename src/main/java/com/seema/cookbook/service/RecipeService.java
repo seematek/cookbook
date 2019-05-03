@@ -36,6 +36,11 @@ public class RecipeService {
 		return recipeRepository.addRecipe(recipe);
 	}
 	
+	public boolean updateRecipe(Recipe recipe) {
+		System.out.println("In updateRecipe " + recipe.toString());
+		return recipeRepository.updateRecipe(recipe);
+	}
+	
 	public boolean deleteRecipe(int id) {
 		System.out.println("In deleteRecipe " + id);
 		return recipeRepository.deleteRecipe(id);

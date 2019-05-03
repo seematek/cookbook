@@ -20,6 +20,7 @@ public class DatabaseRecipeRepository implements RecipeRepository {
 	private final String SQL_GET_RECIPE = "select * from recipe where id=?";
 	private final String SQL_GET_ALL_RECIPES = "select * from recipe";
 	private final String SQL_DELETE_RECIPE = "delete from recipe where id=?";
+	private final String SQL_UPDATE_RECIPE = "update recipe set name=?, description=? where id=?";
 
 	@Autowired
 	public DatabaseRecipeRepository(DataSource ds) {
@@ -39,6 +40,11 @@ public class DatabaseRecipeRepository implements RecipeRepository {
 	@Override
 	public boolean addRecipe(Recipe recipe) {
 		return jdbc.update(SQL_INSERT_RECIPE, recipe.getId(), recipe.getName(), recipe.getDescription())>0;	
+	}
+	
+	@Override
+	public boolean updateRecipe(Recipe recipe) {
+		return jdbc.update(SQL_UPDATE_RECIPE, recipe.getName(), recipe.getDescription(), recipe.getId())>0;	
 	}
 
 	@Override

@@ -16,6 +16,8 @@ public interface RecipeRepository {
 	
 	public boolean addRecipe(Recipe recipe);
 	
+	public boolean updateRecipe(Recipe recipe);
+	
 	public boolean deleteRecipe(int id);
 	
 }

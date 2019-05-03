@@ -110,6 +110,7 @@
 				<version>2.2</version>
 				<configuration>
 					<scanIntervalSeconds>5</scanIntervalSeconds>
+					<port>9080</port>
 				</configuration>
 			</plugin>
 		</plugins>
