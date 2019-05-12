@@ -22,7 +22,10 @@ class App extends Component {
     }
     componentWillMount() {
         this.refreshRecipes();
-
+    }
+    
+    componentWillUpdate() {
+        this.refreshRecipes();
     }
     toggleNewRecipeModal() {
         this.setState( {
